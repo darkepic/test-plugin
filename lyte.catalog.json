@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "type": "plugin",
+  "name": "Test Plugin",
+  "description": "A reference plugin showing desktop popups, DOM mounting, dynamic styles, options, storage and notifications.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "preview": "assets/preview.png",
+  "tags": ["reference", "utility"]
+}

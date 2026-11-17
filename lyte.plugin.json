@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "entry": "plugin.js",
+  "stylesheet": "plugin.css",
+  "permissions": ["dom", "popups", "styles", "storage", "notifications"],
+  "options": [
+    {
+      "id": "badge-color",
+      "type": "color",
+      "label": "Badge accent",
+      "description": "Border and highlight color for the status pill.",
+      "group": "Appearance",
+      "default": "#4fd1c5"
+    },
+    {
+      "id": "badge-scale",
+      "type": "slider",
+      "label": "Badge size",
+      "description": "Font size of the status pill.",
+      "group": "Appearance",
+      "min": 9,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "id": "position",
+      "type": "select",
+      "label": "Corner",
+      "description": "Where the status pill appears inside desktop windows.",
+      "group": "Appearance",
+      "default": "bottom-right",
+      "choices": [
+        { "value": "bottom-right", "label": "Bottom right" },
+        { "value": "bottom-left", "label": "Bottom left" },
+        { "value": "top-right", "label": "Top right" }
+      ]
+    },
+    {
+      "id": "show-badge",
+      "type": "toggle",
+      "label": "Show status pill",
+      "description": "Mount a clickable pill showing window target and persistent click count.",
+      "group": "Behavior",
+      "default": true
+    },
+    {
+      "id": "notify-on-start",
+      "type": "toggle",
+      "label": "Startup notice",
+      "description": "Send a notification when the plugin loads or the pill is clicked.",
+      "group": "Behavior",
+      "default": false
+    }
+  ]
+}
