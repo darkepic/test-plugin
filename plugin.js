@@ -8,7 +8,7 @@ export function activate(lyte) {
     'desktop'
   );
 
-  const labelText = (winKind) => `Test Plugin · ${winKind} · ${opens} opens · ${clicks} clicks`;
+  const labelText = (winKind) => `Test Plugin 1.0.1 · ${winKind} · ${opens} opens · ${clicks} clicks`;
 
   const syncAll = () => {
     const visible = lyte.options.get('show-badge') !== false;
